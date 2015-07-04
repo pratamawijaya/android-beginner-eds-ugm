@@ -1,6 +1,12 @@
 # android-beginner-eds-ugm
 Note for Android Beginner course EDS
 
+Location : EDS Universitas Gajah Mada Indonesia
+Time : 4-5 Juli 2015
+
+Based on Udacity Course : https://www.udacity.com/course/android-development-for-beginners--ud837
+
+
 #Day 1
 ### Android Studio
 - package name diambil dari application name dan domain name
