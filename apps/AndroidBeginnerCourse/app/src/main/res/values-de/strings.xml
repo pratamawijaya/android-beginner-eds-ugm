@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidBeginnerCourse</string>
+    <string name="hello">Hallo</string>
+    <string name="good_morning">Guten Morgen</string>
+</resources>
