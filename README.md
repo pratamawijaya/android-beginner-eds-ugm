@@ -34,6 +34,9 @@ App
 ### Layouting
 - match_parent : mengikuti lebar/tinggi dari parent
 - wrap_content : mengikuti lebar/tinggi dari content yang ada didalam
+- layout_weight hanya bisa digunakan di **LinearLayout**
+- pada **RelativeLayout** pengaturan posision view bisa menggunakan below, toLeft, toRight, selain itu bisa juga by alignParent.
+- pada FrameLayout, pengaturan posisi view menggunakan layout_gravity, bisa diset center, left, right, bottom etc.
 
 ### Perbandingan Density
 basenya adalah 1dp = 1px pada density layar mdpi jadi jika 48px di mdpi maka akan pada density xxhdpi perlu 144px
