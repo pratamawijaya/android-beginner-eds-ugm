@@ -15,6 +15,7 @@ Cheatseet
 =====
 Windows
 - Code formating : CTRL+ALT+L
+- Open File :
 
 Gradle
 ========
@@ -39,3 +40,17 @@ Layouting
 - match_parent : mengikuti lebar/tinggi dari parent
 - wrap_content : mengikuti lebar/tinggi dari content yang ada didalam
 
+perbandingan dpi
+
+- mdpi  (1)
+- hdpi (1.5)
+- xhdpi (2)
+- xxhdpi (3)
+- xxxhdpi (4)
+
+
+# ViewGroup
+- LinearLayout : selalu memiliki orientasi (horizonta dan vertical)
+- RelativeLayout : bisa diset view apakah akan dikanan dibawah dikiri dari sebuah view
+
+- layout_weight hanya bisa digunakan pada LinearLayout
