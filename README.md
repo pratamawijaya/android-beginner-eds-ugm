@@ -17,11 +17,10 @@ Gradle itu adalah automation build tools
 
 Folder Stucture
 ======
- -- app
+ # app
  - folder build : berisi hasil generate dari IDE
  - libs : folder untuk menyimpan library yang berbentuk .jar
  - src : folder dimana source .java dan resource (icon, layout) disimpan
-
- build.gradle : file konfigurasi untuk module app, konfigurasi terdiri dari, compiled SDK Version, buildtoolsversion, applicationID, dan dependecy atau library yang digunakan untuk module app
+ - build.gradle : file konfigurasi untuk module app, konfigurasi terdiri dari, compiled SDK Version, buildtoolsversion, applicationID, dan dependecy atau library yang digunakan untuk module app
 
 
