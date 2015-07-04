@@ -11,6 +11,11 @@ Note for Android Beginner course EDS
 
 - Satu tampilan layout dihandle oleh satu activity.
 
+Cheatseet
+=====
+Windows
+- Code formating : CTRL+ALT+L
+
 Gradle
 ========
 Gradle itu adalah automation build tools
@@ -23,4 +28,14 @@ Folder Stucture
  - src : folder dimana source .java dan resource (icon, layout) disimpan
  - build.gradle : file konfigurasi untuk module app, konfigurasi terdiri dari, compiled SDK Version, buildtoolsversion, applicationID, dan dependecy atau library yang digunakan untuk module app
 
+- file build.gradle yang terdapat dalam folder app, berisi konfigurasi untuk module app
+- file buidl.gradle yang terdapat di root folder digunakan untuk konfigurasi buildscript project dan location repository project
+- file setting.gradle digunakan untuk konfigurasi module apa saja yang akan di compile
+
+
+Layouting
+=======
+
+- match_parent : mengikuti lebar/tinggi dari parent
+- wrap_content : mengikuti lebar/tinggi dari content yang ada didalam
 
