@@ -1,10 +1,10 @@
 # android-beginner-eds-ugm
 Note for Android Beginner course EDS
 
-Location : EDS Universitas Gajah Mada Indonesia
+Location : **EDS Universitas Gajah Mada Indonesia**
 Time : 4-5 Juli 2015
 
-Based on Udacity Course : https://www.udacity.com/course/android-development-for-beginners--ud837
+Based on **Udacity Course** : https://www.udacity.com/course/android-development-for-beginners--ud837
 
 
 #Day 1
@@ -44,6 +44,7 @@ basenya adalah 1dp = 1px pada density layar mdpi jadi jika 48px di mdpi maka aka
  xxhdpi (3)
  xxxhdpi (4)
 ```
+untuk guide lengkap bisa dibaca disini http://sebastien-gabriel.com/designers-guide-to-dpi/home
 
 ### ViewGroup
 - LinearLayout : selalu memiliki orientasi (horizonta dan vertical)
