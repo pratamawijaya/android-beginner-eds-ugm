@@ -22,6 +22,7 @@ import butterknife.OnClick;
 // Actvity
 // ActionBarActivity -> secara deafult sudah memiliki actionbar
 // 22.2 -> AppCompatActivity
+//
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
         Picasso.with(this).setLoggingEnabled(true);
 
         Picasso.with(this)
-                .load("http://media.infospesial.net/image/showbiz/p/selamat-dian-sastro-melahirkan-bayi-perempuan.jpg")
+                .load("http://goodhousekeeping.co.id/wp-content/uploads/2013/09/DianSastro.jpg")
+                .placeholder(R.drawable.placeholder)
                 .into(img);
 
         // intialize
