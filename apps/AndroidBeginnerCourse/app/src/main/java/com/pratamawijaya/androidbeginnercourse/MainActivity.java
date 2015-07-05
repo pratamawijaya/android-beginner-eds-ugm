@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 // Actvity
 // ActionBarActivity -> secara deafult sudah memiliki actionbar
@@ -96,6 +97,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    @OnClick(R.id.btnConvert)
+    public void onConvert() {
+        startActivity(new Intent(this, ThermalConverterActivity.class));
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

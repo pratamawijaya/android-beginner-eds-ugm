@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.pratamawijaya.androidbeginnercourse.ThermalConverterActivity">
+
+
+    <EditText
+        android:id="@+id/inputCelcius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input C" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tempF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="F" />
+
+        <RadioButton
+            android:id="@+id/tempR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="R" />
+
+
+        <RadioButton
+            android:id="@+id/tempK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Convert" />
+
+    <TextView android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:text="18 K" />
+</LinearLayout>

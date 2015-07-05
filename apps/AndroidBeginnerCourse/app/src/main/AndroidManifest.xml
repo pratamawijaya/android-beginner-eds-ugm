@@ -26,6 +26,10 @@
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail" >
         </activity>
+        <activity
+            android:name=".ThermalConverterActivity"
+            android:label="@string/title_activity_thermal_converter" >
+        </activity>
     </application>
 
 </manifest>
