@@ -1,5 +1,6 @@
 package com.pratamawijaya.androidbeginnercourse;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -10,6 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 // Actvity
 // ActionBarActivity -> secara deafult sudah memiliki actionbar
@@ -23,9 +27,18 @@ public class MainActivity extends AppCompatActivity {
     // class  object
     Button btn1;
 
+    @Bind(R.id.inputPhoneNumber)
     EditText inputPhoneNumber;
+
+    @Bind(R.id.textPhone)
     TextView resultPhone;
+
+    @Bind(R.id.btnCall)
     Button btnCall;
+
+//    EditText inputPhoneNumber, inputName, inputAge, inputAddress;
+//    TextView resultPhone;
+//    Button btnCall;
 
 
     @Override
@@ -34,12 +47,11 @@ public class MainActivity extends AppCompatActivity {
         // layout yang dihandle oleh activity
         setContentView(R.layout.activity_main);
 
+        // langkah 1
+        ButterKnife.bind(this);
+
         // intialize
         // agar bisa digunakan view harus di TypeCasting sesuai dengan objectnya
-        btn1 = (Button) findViewById(R.id.btn1);
-        inputPhoneNumber = (EditText) findViewById(R.id.inputPhoneNumber);
-        resultPhone = (TextView) findViewById(R.id.textPhone);
-        btnCall = (Button) findViewById(R.id.btnCall);
 
         // event listener
         btnCall.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +75,17 @@ public class MainActivity extends AppCompatActivity {
 
                     // set phone number to textView
                     resultPhone.setText(inputPhoneNumber.getText().toString());
+
+                    // create bundle
+                    Bundle data = new Bundle();
+                    data.putString("phone", inputPhoneNumber.getText().toString());
+
+                    // change activity
+                    Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                    intent.putExtras(data);
+
+                    // startactivity
+                    startActivity(intent);
                 }
 
 
