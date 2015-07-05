@@ -57,6 +57,22 @@ untuk guide lengkap bisa dibaca disini http://sebastien-gabriel.com/designers-gu
 
 # Day 2
 
+### Android Manifest
+- berisi daftar activity yang ada pada apps, setiap activity yang akan ditampilkan harus didaftarkan di file AndroidManifest.
+- activity yang pertama kali dijalankan adalah activity yang memiliki Intent Filter Main dan intent filter launcher.
+- file manifest juga berisi permission yang dibutuhkan oleh aplikasi, misal internet, gps, dsbg.
+- Manifest di android studio dan eclipse sedikit berbeda, dimana di android studio manifest tidak memiliki konfigurasi setMinSDK dan version code version name, konfigurasi tersebut ditempatkan pada file app/build.gradle
+
+
+
+
+
+
+
+
+
+
+
 ### Excercise
 
 Calculator
