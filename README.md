@@ -67,6 +67,8 @@ untuk guide lengkap bisa dibaca disini http://sebastien-gabriel.com/designers-gu
 - secara default activity di extend ke AppCompatActivity (apabila menggunakan appcompat v22.2)
 - activity memiliki lifecycle/daur hidup http://developer.android.com/images/training/basics/basic-lifecycle.png
 - untuk dapat menggunakan view di layout sebelumnya harus menginitialize sebuah view terlebih dahulu 
+- untuk guideline bisa dibaca disini https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md
+
 ```
 inputPhoneNumber = (EditText) findViewById(R.id.inputPhoneNumber);
 ```
