@@ -9,8 +9,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -37,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.btnCall)
     Button btnCall;
 
+    @Bind(R.id.img)
+    ImageView img;
+
 //    EditText inputPhoneNumber, inputName, inputAge, inputAddress;
 //    TextView resultPhone;
 //    Button btnCall;
@@ -50,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
 
         // langkah 1
         ButterKnife.bind(this);
+
+        Picasso.with(this).setLoggingEnabled(true);
+
+        Picasso.with(this)
+                .load("http://media.infospesial.net/image/showbiz/p/selamat-dian-sastro-melahirkan-bayi-perempuan.jpg")
+                .into(img);
 
         // intialize
         // agar bisa digunakan view harus di TypeCasting sesuai dengan objectnya
