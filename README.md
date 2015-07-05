@@ -72,8 +72,19 @@ untuk guide lengkap bisa dibaca disini http://sebastien-gabriel.com/designers-gu
 ```
 inputPhoneNumber = (EditText) findViewById(R.id.inputPhoneNumber);
 ```
-
-
+- untuk berpindah ke activity lain bisa menggunakan Intent
+```
+Intent intent = new Intent(this, SecondActivity.class);
+startActivity(intent);
+```
+- untuk passing data antar activity bisa menggunakan Bundle
+```
+Bundle bundle = new Bundle();
+bundle.putInt("data",1);
+Intent intent = new Intent(this, SecondActivity.class);
+intent.putExtras(bundle);
+startActivity(intent);
+```
 
 
 
