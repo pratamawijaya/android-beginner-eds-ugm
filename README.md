@@ -63,6 +63,14 @@ untuk guide lengkap bisa dibaca disini http://sebastien-gabriel.com/designers-gu
 - file manifest juga berisi permission yang dibutuhkan oleh aplikasi, misal internet, gps, dsbg.
 - Manifest di android studio dan eclipse sedikit berbeda, dimana di android studio manifest tidak memiliki konfigurasi setMinSDK dan version code version name, konfigurasi tersebut ditempatkan pada file app/build.gradle
 
+### Activity
+- secara default activity di extend ke AppCompatActivity (apabila menggunakan appcompat v22.2)
+- activity memiliki lifecycle/daur hidup http://developer.android.com/images/training/basics/basic-lifecycle.png
+- untuk dapat menggunakan view di layout sebelumnya harus menginitialize sebuah view terlebih dahulu 
+```
+inputPhoneNumber = (EditText) findViewById(R.id.inputPhoneNumber);
+```
+
 
 
 
